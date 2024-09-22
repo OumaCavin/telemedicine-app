@@ -1,0 +1,23 @@
+.footer {
+    /* background-color: #2C3E50; */
+    background-color: #34495e; /*Slightly lighter dark blue */
+    padding: 1rem;
+    text-align: center;
+    /* color: #fff; */
+    color: #ecf0f1; /* Light gray text for contrast */
+    margin-top: auto; /* Ensures the footer stays at the bottom */
+    width: 100%; /* Makes sure the footer takes the full width */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional: Adds a small shadow for a professional look */
+    z-index: 10; /* Keep footer on top of other elements */
+
+}
+
+/* .footer {
+    background-color: #2C3E50;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+} */

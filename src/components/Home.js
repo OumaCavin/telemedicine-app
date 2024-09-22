@@ -23,6 +23,15 @@ const Home = () => {
                     <p>Schedule appointments online at your convenience.</p>
                 </div>
             </section>
+            {/* <section>
+                 <div className="home-container">
+                     <div className="home-content">
+                         <h1>Welcome to Telemedicine</h1>
+                         <p>Your health, our priority.</p>
+                        <a href="/login" className="cta-button">Get Started</a>
+            </div>
+                </div>
+            </section> */}
         </div>
     );
 };

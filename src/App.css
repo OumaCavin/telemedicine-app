@@ -36,3 +36,32 @@
     transform: rotate(360deg);
   }
 }
+/* Ensure the entire viewport height is used */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.main-layout {
+  display: flex;
+  flex-grow: 1; /* Take available space between the header and footer */
+}
+
+.content {
+  flex-grow: 1;
+  padding: 2rem;
+  background-color: #ecf0f1;
+}
+
+/* .footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+  margin-top: auto; /* Push the footer to the bottom */

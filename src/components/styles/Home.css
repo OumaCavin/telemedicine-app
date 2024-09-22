@@ -67,3 +67,27 @@
         margin-bottom: 20px;
     }
 }
+
+/* .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #ecf0f1;
+}
+
+.home-content {
+    text-align: center;
+} */
+
+.cta-button {
+    padding: 1rem 2rem;
+    background-color: #1abc9c;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #16a085;
+}
