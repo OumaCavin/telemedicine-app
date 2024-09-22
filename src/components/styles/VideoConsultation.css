@@ -1,0 +1,48 @@
+.video-consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px;
+    background-color: #f8f9fa;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    width: 500px;
+    height: 300px;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.start-call-container, .end-call-container {
+    margin-top: 20px;
+}
+
+.start-call-button, .end-call-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.end-call-button {
+    background-color: #dc3545;
+}
