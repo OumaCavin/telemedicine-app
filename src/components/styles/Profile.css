@@ -4,6 +4,127 @@
     align-items: center;
     height: 100vh;
     background-color: #f8f9fa;
+    position: relative; /* Ensure correct positioning for children */
+}
+
+.profile-container {
+    position: relative; /* Ensures the title and card can be positioned relative to each other */
+    max-width: 400px;
+    width: 100%;
+}
+
+.profile-title {
+    position: absolute;
+    top: -30px; /* Adjusted to be higher above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 10px;
+    color: #007bff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.profile-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    z-index: 1; /* Ensure it's behind the title */
+}
+
+.profile-card p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.profile-picture-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.edit-profile-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+
+/* .profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+
+.profile-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: left;
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-card p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.profile-picture-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.edit-profile-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+} */
+/* ---------------------------------- */
+/* .profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
 }
 
 .profile-card {
@@ -36,4 +157,5 @@ h2 {
     border-radius: 5px;
     font-size: 1.1rem;
     cursor: pointer;
-}
+} */
+/* ------------------------------- */

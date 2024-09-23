@@ -1,4 +1,72 @@
-.edit-profile {
+.edit-profile-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    position: relative; /* Ensure correct positioning for children */
+}
+
+.edit-profile-container {
+    position: relative; /* Ensures the title and card can be positioned relative to each other */
+    max-width: 400px;
+    width: 100%;
+}
+
+.edit-profile-title {
+    position: absolute;
+    top: -30px; /* Adjusted to be higher above the card */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 0 10px;
+    color: #007bff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 10; /* Ensure it appears above other elements */
+}
+
+.edit-profile-card {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+    z-index: 1; /* Ensure it's behind the title */
+}
+
+.edit-profile-card p {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.edit-profile input {
+    width: 100%; /* Ensure inputs take full width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px; /* Spacing between label and input */
+}
+
+.edit-profile-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.edit-profile-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+
+/* .edit-profile {
     padding: 20px;
     background-color: #f5f5f5;
     min-height: 100vh;
@@ -35,4 +103,4 @@
 
 .save-btn:hover {
     background-color: #16a085;
-}
+} */

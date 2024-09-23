@@ -88,7 +88,8 @@
         background-color: #282c34;
         padding: 1rem;
         z-index: 1;
-        width: 100%;
+        /* width: 100%; */
+        width: 150px;
         /*  max-width: 200px; Set a max width for the menu */
     }
 

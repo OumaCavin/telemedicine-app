@@ -42,6 +42,7 @@ const Sidebar = () => {
                     </ul>
                 )}
 
+
                 {/* Profile with dropdown */}
                 <li onClick={toggleProfileDropdown} className="dropdown-toggle">
                     Profile
