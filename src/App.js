@@ -12,6 +12,11 @@ import Profile from './components/Profile';
 import VideoConsultation from './components/VideoConsultation';
 import BookAppointment from './components/BookAppointment';
 import ContactUs from './components/ContactUs';
+import ViewAppointment from './components/ViewAppointment';
+import ViewHistory from './components/ViewHistory';
+import UploadRecords from './components/UploadRecords';
+import EditProfile from './components/EditProfile';
+import ChangePassword from './components/ChangePassword';
 
 import './App.css';
 
@@ -27,12 +32,17 @@ function App() {
                             <Route path="/" element={<Home />} />
                             <Route path="/login" element={<Login />} />
                             <Route path="/registration" element={<Registration />} />
-                            <Route path="/forgot-password" element={<ForgotPassword />} /> {/* Corrected here */}
+                            <Route path="/forgot-password" element={<ForgotPassword />} />
                             <Route path="/dashboard" element={<Dashboard />} />
                             <Route path="/profile" element={<Profile />} />
                             <Route path="/video-consultation" element={<VideoConsultation />} />
                             <Route path="/book-appointment" element={<BookAppointment />} />
                             <Route path="/contact-us" element={<ContactUs />} />
+                            <Route path="/view-appointment" element={<ViewAppointment />} />
+                            <Route path="/view-history" element={<ViewHistory />} />
+                            <Route path="/upload-records" element={<UploadRecords />} />
+                            <Route path="/edit-profile" element={<EditProfile />} />
+                            <Route path="/change-password" element={<ChangePassword />} />
                         </Routes>
                     </div>
                 </div>
@@ -43,6 +53,55 @@ function App() {
 }
 
 export default App;
+
+
+// import React from 'react';
+// import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+// import NavBar from './components/NavBar';
+// import Login from './components/Login';
+// import Sidebar from './components/Sidebar';
+// import Registration from './components/Registration';
+// import ForgotPassword from './components/ForgotPassword'; 
+// import Footer from './components/Footer';
+// import Home from './components/Home';
+// import Dashboard from './components/Dashboard';
+// import Profile from './components/Profile';
+// import VideoConsultation from './components/VideoConsultation';
+// import BookAppointment from './components/BookAppointment';
+// import ContactUs from './components/ContactUs';
+
+// import './App.css';
+
+// function App() {
+//     return (
+//         <Router>
+//             <div className="app">
+//                 <NavBar />
+//                 <div className="main-layout">
+//                     <Sidebar />
+//                     <div className="content">
+//                         <Routes>
+//                             <Route path="/" element={<Home />} />
+//                             <Route path="/login" element={<Login />} />
+//                             <Route path="/registration" element={<Registration />} />
+//                             <Route path="/forgot-password" element={<ForgotPassword />} /> {/* Corrected here */}
+//                             <Route path="/dashboard" element={<Dashboard />} />
+//                             <Route path="/profile" element={<Profile />} />
+//                             <Route path="/video-consultation" element={<VideoConsultation />} />
+//                             <Route path="/book-appointment" element={<BookAppointment />} />
+//                             <Route path="/contact-us" element={<ContactUs />} />
+//                         </Routes>
+//                     </div>
+//                 </div>
+//                 <Footer />
+//             </div>
+//         </Router>
+//     );
+// }
+
+// export default App;
+
+// ---------------------------
 
 // import React from 'react';
 // import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';

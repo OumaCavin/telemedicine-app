@@ -1,0 +1,38 @@
+.edit-profile {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.edit-profile h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.edit-profile form {
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-profile label {
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.edit-profile input {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.save-btn {
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.save-btn:hover {
+    background-color: #16a085;
+}

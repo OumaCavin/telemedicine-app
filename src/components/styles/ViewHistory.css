@@ -1,0 +1,15 @@
+.view-history {
+    padding: 20px;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+}
+
+.view-history h1 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.view-history p {
+    color: #666;
+    font-size: 16px;
+}

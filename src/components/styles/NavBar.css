@@ -1,3 +1,4 @@
+/* Basic Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -5,6 +6,103 @@
     background-color: #282c34;
     padding: 10px 20px;
 }
+
+.logo {
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Navigation Links */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links li a:hover {
+    color: #1abc9c;
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none; /* Hidden by default */
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+   /* display: block;  Show hamburger icon */
+}
+
+/* Dropdown Menu */
+.dropdown-parent {
+    position: relative;
+}
+
+.dropdown-toggle {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #333;
+    list-style: none;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 200px;
+}
+
+.dropdown li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.dropdown li a:hover {
+    background-color: #1abc9c;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide menu by default */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;  /* Adjust based on your navbar height */
+        right: 0;
+        background-color: #282c34;
+        padding: 1rem;
+        z-index: 1;
+        width: 100%;
+        /*  max-width: 200px; Set a max width for the menu */
+    }
+
+    .nav-links.is-active {
+        display: flex; /* Show menu when active */
+    }
+
+    .hamburger {
+        display: block; /* Show hamburger icon */
+    }
+}
+
+/* ------------------------------- */
+
 
 .nav-links ul {
     list-style: none;
@@ -18,69 +116,8 @@
     margin: 10px 0; /* Space out the links */
 }
 
-.hamburger {
-    display: none; /* Hidden by default */
-    font-size: 24px;
-    background: none;
-    border: none;
-    color: white;
-    cursor: pointer;
-   /* display: block;  Show hamburger icon */
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .nav-links {
-        display: none; /* Hide menu by default */       
-        flex-direction: column;
-        position: absolute;
-        top: 60px; /* Adjust based on your navbar height */
-        right: 0;
-        background-color: #282c34;
-        /* width: 100%; */
-       /*  max-width: 200px; Set a max width for the menu */
-        padding: 1rem; /* Add padding for spacing */
-        z-index: 1;
-        
-    }
-
-    .nav-links.is-active {
-        display: flex; /* Show menu when active */
-    }
-    .hamburger {
-        display: block; /* Show hamburger icon */
-    }
-
-}
 
 
-.logo {
-    font-size: 1.5rem;
-    color: #fff;
-    font-weight: bold;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-/* .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #2C3E50;
-    padding: 1rem;
-} */
-.nav-links li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.nav-links li a:hover {
-    color: #1abc9c;
-}
 
 @media (max-width: 768px) {
     .nav-links {
